@@ -41,12 +41,38 @@ export const TestPage = styled.div`
 
   .eye {
     width: 20%;
-    top: 55% !important;
+    top: 57% !important;
     max-width: 7rem;
+
+    circle {
+      animation: move-iris 8s ease-out infinite;
+    }
   }
 
   .triangle {
     width: 100%;
     max-width: 30rem;
+  }
+
+  @keyframes move-iris {
+    0% {
+      transform: translateX(-5%);
+    }
+
+    30% {
+      transform: translateX(-5%);
+    }
+
+    40% {
+      transform: translateX(15%);
+    }
+
+    70% {
+      transform: translateX(15%);
+    }
+
+    100% {
+      transform: translateX(-5%);
+    }
   }
 `;
