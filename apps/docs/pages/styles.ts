@@ -5,17 +5,22 @@ export const TestPage = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  /* background-color: #ffefde; */
+  position: relative;
+  background-color: #ffefde;
 
-  & > div {
-    width: 5rem;
-    margin: 0.5rem;
+  .container {
+    width: 20rem;
 
-    &:nth-child(2) {
-      transform: rotate(-90deg);
-      circle {
-        display: none;
-      }
+    & > div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
+  }
+
+  .eye {
+    width: 5rem;
+    top: 57% !important;
   }
 `;

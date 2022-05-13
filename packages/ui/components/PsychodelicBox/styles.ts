@@ -2,8 +2,8 @@ import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
 function getAxis() {
-  const max = -35;
-  const min = -65;
+  const max = -45;
+  const min = -55;
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
