@@ -7,9 +7,10 @@ export const TestPage = styled.div`
   height: 100vh;
   position: relative;
   background-color: #ffefde;
+  overflow: hidden;
 
   .container {
-    width: 20rem;
+    width: 100vw;
 
     & > div {
       position: absolute;
@@ -19,8 +20,33 @@ export const TestPage = styled.div`
     }
   }
 
+  .moon {
+    width: 25%;
+    max-width: 40rem;
+    top: 40% !important;
+  }
+
+  .hand {
+    width: 30%;
+    top: 48% !important;
+    max-width: 9rem;
+  }
+
+  .smoke {
+    width: 120%;
+    top: 20% !important;
+    left: calc(50% + 2rem) !important;
+    max-width: 30rem;
+  }
+
   .eye {
-    width: 5rem;
-    top: 57% !important;
+    width: 20%;
+    top: 55% !important;
+    max-width: 7rem;
+  }
+
+  .triangle {
+    width: 100%;
+    max-width: 30rem;
   }
 `;

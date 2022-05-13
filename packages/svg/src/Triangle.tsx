@@ -1,12 +1,6 @@
 export const Triangle = () => {
   return (
-    <svg
-      width="401"
-      height="400"
-      viewBox="0 0 401 400"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg viewBox="0 0 401 400" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M39.8685 292.5L200.5 14.972L361.131 292.5H39.8685Z"
         fill="#60DBFB"
@@ -85,7 +79,6 @@ export const Triangle = () => {
           fill="#392823"
         />
       </g>
-      <path d="M201 254L345.626 286.25H56.3738L201 254Z" fill="#392823" />
     </svg>
   );
 };
