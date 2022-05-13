@@ -41,7 +41,7 @@ export const TestPage = styled.div`
 
   .eye {
     width: 20%;
-    top: 57% !important;
+    top: calc(50% + 3rem) !important;
     max-width: 7rem;
 
     circle {

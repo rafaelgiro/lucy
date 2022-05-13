@@ -10,4 +10,5 @@ export const OverlayContainer = styled.div`
   left: 0;
   position: absolute;
   pointer-events: none;
+  mix-blend-mode: color-dodge;
 `;
