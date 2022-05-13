@@ -1,6 +1,6 @@
 import { PsychedelicBox, NoiseOverlay } from "@lucyds/ui";
 import { Eye, Hand, Moon, Smoke, Triangle } from "@lucyds/svg";
-import { TestPage } from "./styles";
+import { TestPage } from "../styles";
 import { css, Global } from "@emotion/react";
 
 export default function Docs() {
