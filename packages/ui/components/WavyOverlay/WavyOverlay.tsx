@@ -5,6 +5,8 @@ export const WavyOverlay = () => {
     <>
       <OverlayContainer />
       <SecondOverlay />
+      <SecondOverlay className="delay" />
+      <SecondOverlay className="delay-2" />
     </>
   );
 };

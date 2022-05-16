@@ -11,61 +11,34 @@ export const OverlayContainer = styled.div`
   position: absolute;
   pointer-events: none;
   mix-blend-mode: multiply;
-  opacity: 0.4;
+  opacity: 0.3;
 `;
 
 export const SecondOverlay = styled(OverlayContainer)`
-  animation: subtle-move 10s ease-in-out infinite;
+  animation: subtle-move 5s ease-in-out infinite;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background-color: red;
-    animation: colors 10s ease-in-out infinite;
-    z-index: 200;
-    mix-blend-mode: color;
+  &.delay {
+    animation-delay: 1.5s;
   }
 
-  @keyframes colors {
-    0% {
-      opacity: 0;
-    }
-
-    40% {
-      opacity: 1;
-    }
-
-    50% {
-      opacity: 1;
-    }
-
-    60% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 0;
-    }
+  &.delay-2 {
+    animation-delay: 3.3s;
   }
 
   @keyframes subtle-move {
     0% {
       transform: scale(1) translateX(0);
-      opacity: 0.4;
+      opacity: 0;
     }
 
-    50% {
-      transform: scale(1.1) translateX(2px);
-      opacity: 0.6;
+    95% {
+      transform: scale(1.4) translateX(2px);
+      opacity: 0.5;
     }
 
     100% {
-      transform: scale(1) translateX(0);
-      opacity: 0.4;
+      transform: scale(1.4) translateX(0);
+      opacity: 0;
     }
   }
 `;
