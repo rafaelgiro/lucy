@@ -1,5 +1,10 @@
 {
   "extends": "@lucy/tsconfig/nextjs.json",
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/stories/Button.stories.msx"
+  ],
   "exclude": ["node_modules"]
 }
