@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: [
     // app content
@@ -7,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        quicksand: ['"Quicksand"', ...defaultTheme.fontFamily.sans],
+      },
       colors: {
         primary: {
           50: "#fde7f7",

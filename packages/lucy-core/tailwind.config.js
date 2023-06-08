@@ -1,6 +1,6 @@
 const sharedConfig = require("@lucy/tailwind-config/tailwind.config.js");
 
 module.exports = {
-  prefix: "lucy-",
+  // prefix: "lc-",
   ...sharedConfig,
 };

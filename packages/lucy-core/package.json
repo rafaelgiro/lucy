@@ -7,7 +7,7 @@
   "license": "MIT",
   "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./dist",
+    ".": "./src",
     "./styles.css": "./dist/index.css"
   },
   "scripts": {
